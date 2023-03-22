@@ -14,3 +14,4 @@ You can usse the online tool **Jupyter Lab** to run the examples: https://jupyte
 
 ## Lab 03 RSA
 * [Lab_03_RSA/RSA_textbook.ipynb](Lab_03_RSA/RSA_textbook.ipynb)  Textbook RSA encryption/decryption
+* [Lab_03_RSA/RSA_RSA_OAEP_encryption.ipynb](Lab_03_RSA/RSA_RSA_OAEP_encryption.ipynb) RSA OAEP encryption/decryption
