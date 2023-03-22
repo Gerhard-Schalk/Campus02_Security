@@ -11,3 +11,6 @@ You can usse the online tool **Jupyter Lab** to run the examples: https://jupyte
 ## Lab 02 AES and Block Cipher Modes of Operation
 * [Lab_02_AES/aes_enc_dec.ipynb](Lab_02_AES/aes_enc_dec.ipynb)  AES Encryption/Decryption
 * [Lab_02_AES/aes_encrypt_bmp_ecb_cbc.ipynb](Lab_02_AES/aes_encrypt_bmp_ecb_cbc.ipynb)  AES Encrypt an image to demonstrate the difference between ECB and CBC
+
+## Lab 03 RSA
+* [Lab_03_RSA/RSA_textbook.ipynb](Lab_03_RSA/RSA_textbook.ipynb)  Textbook RSA encryption/decryption
