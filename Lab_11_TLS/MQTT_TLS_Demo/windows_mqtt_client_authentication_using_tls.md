@@ -49,12 +49,12 @@ openssl genrsa -out client.key 2048
 Now, we create a signing request file from this key.
 
 (Wikipedia https://de.wikipedia.org/wiki/Certificate_Signing_Request)
+
+**Note:**  The Common Name (CN) needs to match the hostname of your broker!
+          For your example we need to use <b>"10.0.0.1"</b>.
 ```
 openssl req -out client.csr -key client.key -new
 ```
-**Note:**  The Common Name (CN) needs to match the hostname of your broker!
-          For your example we need to use "192.168.0.100".
-
 Output:
 ```
 You are about to be asked to enter information that will be incorporated
@@ -69,7 +69,7 @@ State or Province Name (full name) [Some-State]:Austria
 Locality Name (eg, city) []:Graz
 Organization Name (eg, company) [Internet Widgits Pty Ltd]:Campus 02 AT
 Organizational Unit Name (eg, section) []:
-Common Name (e.g. server FQDN or YOUR name) []:192.168.0.100
+<b>Common Name (e.g. server FQDN or YOUR name) []:10.0.0.1
 Email Address []:
 
 Please enter the following 'extra' attributes
