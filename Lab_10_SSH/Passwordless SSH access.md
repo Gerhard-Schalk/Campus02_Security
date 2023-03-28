@@ -47,3 +47,7 @@ Using the computer which you will be connecting from, append the public key to y
 ```
 ssh pi@10.0.0.1
 ```
+## Step 4: Run the following linux command to display CAN-Bus messages (Temperature value)
+```
+candump can0 -t z -x -e
+```
