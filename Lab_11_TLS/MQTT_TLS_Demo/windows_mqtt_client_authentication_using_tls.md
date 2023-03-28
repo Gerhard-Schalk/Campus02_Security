@@ -86,6 +86,11 @@ An optional company name []:
 openssl x509 -req -in client.csr -CA ../ca/ca.crt -CAkey ../ca/ca.key -CAcreateserial -out client.crt -days 2000
 ```
 
+Use OpenSSL to print the certificate in text form:
+```
+openssl x509 -in client.crt -text -noout
+```
+
 # Certificaton - Overview
 By now you should have all these files:
 ```
