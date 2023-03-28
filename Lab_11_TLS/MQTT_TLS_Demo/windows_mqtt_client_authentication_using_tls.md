@@ -6,7 +6,7 @@ OpenSSL Windows Binary: https://slproweb.com/products/Win32OpenSSL.html
 MQTT Explorer (portable): http://mqtt-explorer.com/ 
 
 ## Step 2: Create the MQTT Client certificate
-### Create a working folders
+### Create a working folder for the CA
 Open the Command Prompt in Windows 10
 
 ```
@@ -27,9 +27,11 @@ mkdir ca
 ```
 cd ca
 ```
-### Downlaod the ca files
-Download the ca files ```ca.crt``` and ```ca.key``` into the folder ```\Raspi_MQTT_Demo\certs\ca```.
 
+Download the ca files ```ca.crt``` and ```ca.key``` into the folder ```\Raspi_MQTT_Demo\certs\ca```.
+Now we can pass the Certificate Signing Request (csr) file to our validation authority:
+
+Now we have setup the CA 
 
 ### Create certificates for the MQTT clients using OpenSSL 
 Create a working folder:
@@ -51,7 +53,7 @@ Now, we create a signing request file from this key.
 (Wikipedia https://de.wikipedia.org/wiki/Certificate_Signing_Request)
 
 **Note:**  The Common Name (CN) needs to match the hostname of your broker!
-          For your example we need to use <b>"10.0.0.1"</b>.
+          For your example we need to use **"10.0.0.1"**.
 ```
 openssl req -out client.csr -key client.key -new
 ```
@@ -69,7 +71,7 @@ State or Province Name (full name) [Some-State]:Austria
 Locality Name (eg, city) []:Graz
 Organization Name (eg, company) [Internet Widgits Pty Ltd]:Campus 02 AT
 Organizational Unit Name (eg, section) []:
-<b>Common Name (e.g. server FQDN or YOUR name) []:10.0.0.1
+Common Name (e.g. server FQDN or YOUR name) []:10.0.0.1
 Email Address []:
 
 Please enter the following 'extra' attributes
@@ -78,7 +80,7 @@ A challenge password []:
 An optional company name []:
 ```
 
-Now we can pass the Certificate Signing Request (csr) file to our validation authority:
+
 **Note:** CA key pass phrase = ```1234```
 ```
 openssl x509 -req -in client.csr -CA ../ca/ca.crt -CAkey ../ca/ca.key -CAcreateserial -out client.crt -days 2000
