@@ -89,7 +89,7 @@ An optional company name []:
 Use the following OpenSSL command to check and print the the Certificate Signing Request (CSR) in text form:
 
 ```
-openssl req -text -verify -in boker.csr -noout
+openssl req -text -verify -in client.csr -noout
 ```
 Now we can pass the Certificate Signing Request (csr) file to our certification authority (CA).<br>
 The CA signs the CSR and generates the client certificate.<br>
