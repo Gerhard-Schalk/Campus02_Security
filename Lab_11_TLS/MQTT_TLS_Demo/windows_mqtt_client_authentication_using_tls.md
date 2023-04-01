@@ -52,7 +52,7 @@ openssl genrsa -out client.key 2048
 Now we can check the private RSA Key
 
 ```
-openssl rsa -in broker.key -check
+openssl rsa -in client.key -check
 ```
 
 Next, we create a signing request file for the for private RSA key
