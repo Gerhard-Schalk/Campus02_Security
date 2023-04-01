@@ -48,7 +48,14 @@ Generate a client RSA key
 ```
 openssl genrsa -out client.key 2048
 ```
-Now, we create a signing request file from this key.
+
+Now we can check the private RSA Key
+
+```
+openssl rsa -in broker.key -check
+```
+
+Next, we create a signing request file for the for private RSA key
 
 (Wikipedia https://de.wikipedia.org/wiki/Certificate_Signing_Request)
 
@@ -79,9 +86,15 @@ to be sent with your certificate request
 A challenge password []:
 An optional company name []:
 ```
+Use the following OpenSSL command to check and print the the Certificate Signing Request (CSR) in text form:
 
-
+```
+openssl req -text -verify -in boker.csr -noout
+```
+Now we can pass the Certificate Signing Request (csr) file to our certification authority (CA).<br>
+The CA signs the CSR and generates the client certificate.<br>
 **Note:** CA key pass phrase = ```1234```
+
 ```
 openssl x509 -req -in client.csr -CA ../ca/ca.crt -CAkey ../ca/ca.key -CAcreateserial -out client.crt -days 2000
 ```
