@@ -58,7 +58,7 @@ openssl rsa -in client.key -check
 To view the key's details, you can use the following OpenSSL command:
 
 ```
-openssl rsa -in alice_private.pem -noout -text
+openssl rsa -in client.key -noout -text
 ```
 
 Next, we create a signing request file for the for private RSA key
