@@ -17,7 +17,7 @@ def customCallback(client, userdata, message):
 
 
 # Configure your device and security credentials
-host = 'a368ann75737xj-ats.iot.eu-central-1.amazonaws.com' # Enter your device data endpoint (see AWS IoT > Settings)
+host = '<please edit>.iot.eu-central-1.amazonaws.com' # Enter your device data endpoint (see AWS IoT > Settings)
 port = 8883 # MQTT Port default 8883
 
 rootCAPath = 'AmazonRootCA1.pem'
