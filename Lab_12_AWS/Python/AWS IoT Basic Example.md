@@ -10,7 +10,7 @@ Wireshark https://www.wireshark.org/download.html<br>
 MQTT Explorer (portable): http://mqtt-explorer.com/<br>
 
 ## Create AWS credentials (keys and certificates)
-```
+
 Generate a client RSA key
 ```
 openssl genrsa -out aws_demo_device.key 2048
