@@ -1,16 +1,15 @@
-#Create AWS credentials (keys and certificates)
+# AWS Example
 
-Tools - download and installation
-OpenSSL Windows Binary: https://slproweb.com/products/Win32OpenSSL.html
-OpenSSL MAC installation guide https://macappstore.org/openssl/
-OpenSSL Linux installation:
-```
-sudo apt install openssl
-```
+## Tools - download and installation
+OpenSSL Windows Binary: https://slproweb.com/products/Win32OpenSSL.html<br>
+OpenSSL MAC installation guide https://macappstore.org/openssl/<br>
+OpenSSL Linux installation: ```sudo apt install openssl```<br>
 
-MQTT Explorer (portable): http://mqtt-explorer.com/
+Wireshark https://www.wireshark.org/download.html<br>
 
+MQTT Explorer (portable): http://mqtt-explorer.com/<br>
 
+## Create AWS credentials (keys and certificates)
 ```
 Generate a client RSA key
 ```
@@ -53,6 +52,7 @@ openssl x509 -in aws_demo_device.crt -text -noout
 ```
 Now you can use the AWS credentials (keys and certificates) to run the aws_basicPubSub.py example to connect to AWS via MQTT and TLS. 
 
+## Wireshark Example
 Task: Use Wireshark to analyze the connection.
 
 Wireshark filter setting:
