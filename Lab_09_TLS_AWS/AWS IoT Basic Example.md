@@ -34,7 +34,7 @@ Downlaod all credentials (keys and certificates) from AWS.
 Use OpenSSL to print the device certificate in text form:
 
 ```
-openssl x509 -in aws_demo_device.crt -text -noout
+openssl x509 -text -noout -in <your file name>.crt
 ```
 Now you can use the AWS credentials (keys and certificates) to run the python aws_basicPubSub.py example to connect to AWS via MQTT and TLS. 
 
