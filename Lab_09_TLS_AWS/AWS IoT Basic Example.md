@@ -16,7 +16,7 @@ To view the key's details, you can use the following OpenSSL command:
 openssl rsa -in aws_demo_device.key -noout -text
 ```
 
-Next, we create a signing request file for the for private RSA key.<br> (for more details see: [https://de.wikipedia.org/wiki/Certificate_Signing_Request](https://azure.github.io/IoTTrainingPack/modules/Certificates101/02_x509.html))
+Next, we create a signing request file for the for private RSA key.<br> (for more details see: https://azure.github.io/IoTTrainingPack/modules/Certificates101/02_x509.html)
 
 ```
 openssl req -out aws_demo_device.csr -key aws_demo_device.key -new
