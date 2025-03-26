@@ -5,6 +5,9 @@ To do this, you need to use an SSH key instead of a password.
 
 See also: https://www.raspberrypi.org/documentation/remote-access/ssh/passwordless.md 
           https://en.wikipedia.org/wiki/Secure_Shell
+          https://code.visualstudio.com/docs/remote/ssh-tutorial
+          https://github.com/gloveboxes/Raspberry-Pi-with-Visual-Studio-Code-Remote-SSH-and-C-or-C-Development/blob/master/README.md
+          
 
 ## Step 1: Generate new SSH keys
 
