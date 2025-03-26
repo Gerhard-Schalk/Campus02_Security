@@ -3,9 +3,9 @@
 It is possible to configure your Raspberry Pi to allow access from another computer without needing to provide a password each time you connect.
 To do this, you need to use an SSH key instead of a password.
 
-See also: https://www.raspberrypi.org/documentation/remote-access/ssh/passwordless.md 
-          https://en.wikipedia.org/wiki/Secure_Shell
-          https://code.visualstudio.com/docs/remote/ssh-tutorial
+See also: https://www.raspberrypi.org/documentation/remote-access/ssh/passwordless.md<br> 
+          https://en.wikipedia.org/wiki/Secure_Shell<br>
+          https://code.visualstudio.com/docs/remote/ssh-tutorial<br>
           https://github.com/gloveboxes/Raspberry-Pi-with-Visual-Studio-Code-Remote-SSH-and-C-or-C-Development/blob/master/README.md
           
 
