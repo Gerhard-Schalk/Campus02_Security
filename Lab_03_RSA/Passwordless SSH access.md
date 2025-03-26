@@ -13,7 +13,7 @@ See also: https://www.raspberrypi.org/documentation/remote-access/ssh/passwordle
 
 To generate new SSH keys enter the following command:
 ```
-ssh-keygen -b 4096
+ssh-keygen -t rsa -b 4096
 ```
 Upon entering this command, you will be asked where to save the key. Saving it in the default location by pressing Enter.
 
