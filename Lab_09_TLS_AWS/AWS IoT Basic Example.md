@@ -30,7 +30,7 @@ openssl req -text -verify -noout -in aws_demo_device.csr
 ```
 
 ## Upload our Certificate Signing Request (CSR) file to AWS IoT Core
-Now you can upload our Certificate Signing Request (csr) file to AWS IoT Core (www.aws.com) and create the device certificate.
+Now you can upload our Certificate Signing Request (csr) file to AWS IoT Core (www.aws.com), create a new "Thing" and create the "Thing" device certificate.
 AWS IoT Core will check the CSR Signature and create a certificate (convert CRS into a X.509 certificate and sign it with the AWS private key).
 
 
