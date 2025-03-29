@@ -11,7 +11,8 @@ openssl rsa -in aws_demo_device.key -check
 ```
 
 To view the key's details, you can use the following OpenSSL command:
-
+<b>Note:</b> aws_demo_device.key contains the private and the public key. Do not share this file!
+The public key is shared as certificate.
 ```
 openssl rsa -in aws_demo_device.key -noout -text
 ```
@@ -25,7 +26,7 @@ openssl req -out aws_demo_device.csr -key aws_demo_device.key -new
 Use the following OpenSSL command to check and print the the Certificate Signing Request (CSR) in text form:
 
 ```
-openssl req -text -verify -in aws_demo_device.csr -noout
+openssl req -text -verify -noout -in aws_demo_device.csr
 ```
 
 Now we can upload our Certificate Signing Request (csr) file to AWS IoT and create the device certificate.
