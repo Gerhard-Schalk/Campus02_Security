@@ -30,16 +30,31 @@ openssl req -text -verify -noout -in aws_demo_device.csr
 ```
 
 ## Upload our Certificate Signing Request (CSR) file to AWS IoT Core
-Now you can upload our Certificate Signing Request (csr) file to AWS IoT Core (www.aws.com), create a new "Thing" and create the "Thing" device certificate.
+Now you can upload our Certificate Signing Request (csr) file to AWS IoT Core (www.aws.com), create a new IoT device ("Thing") and create the IoT device ("Thing" ) certificate.
 AWS IoT Core will check the CSR Signature and create a certificate (convert CRS into a X.509 certificate and sign it with the AWS private key).
 
 
 ## Downlaod all credentials (keys and certificates) from AWS.
-Use OpenSSL to print the device certificate in text form:
+Download your device ("Thing") certificate.
+
+Use OpenSSL to print the device ("Thing") certificate in text form:
 
 ```
 openssl x509 -text -noout -in <your file name>.crt
 ```
+
+Downlaod the Amazon RSA Root Certificate - Amazon Root CA1 using the following command:
+```
+curl https://www.amazontrust.com/repository/AmazonRootCA1.pem -o AmazonRootCA1.pem
+```
+
+Use OpenSSL to print the Amazon Root CA1.
+
+```
+openssl x509 -text -noout -in AmazonRootCA1.pem 
+```
+
+
 # Setup and execute AWS examples 
 Now you can use the AWS credentials (keys and certificates) to run the python aws_basicPubSub.py example to connect to AWS via MQTT and TLS. 
 
