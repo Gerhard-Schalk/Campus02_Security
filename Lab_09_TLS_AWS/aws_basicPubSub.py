@@ -26,7 +26,7 @@ privateKeyPath = 'aws_demo_device.key'
 
 clientId = 'Python_Device' # Your Things Name
 
-topic = 'Test' # MQTT topic
+topic = 'test' # MQTT topic
 
 
 # Configure logging
