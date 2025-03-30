@@ -1,6 +1,6 @@
 # Create AWS credentials (keys and certificates)
 
-## Generate a client RSA key:
+## Generate a client RSA key-pair:
 ```
 openssl genrsa -out aws_demo_device.key 2048
 ```
