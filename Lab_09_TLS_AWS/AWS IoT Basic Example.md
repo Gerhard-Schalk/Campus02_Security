@@ -55,8 +55,10 @@ openssl x509 -text -noout -in AmazonRootCA1.pem
 ```
 
 
-# Setup and execute AWS examples 
-Now you can use the AWS credentials (keys and certificates) to run the python aws_basicPubSub.py example to connect to AWS via MQTT and TLS. 
+# Setup and execute AWS examples to connect to AWS IoT Core via MQTT and TLS.
+- Use MQTT Explorer to send/receive MQTT messages to/from the AWS IoT Core Cloud.
+- Use AWS “Test” Web Interface to send/receive MQTT messages to/from MQTT Explorer
+- Use the aws_basicPubSub.py example (https://github.com/Gerhard-Schalk/Campus02_Security) to connect to AWS IoT Core Cloud.
 
 # Wireshark Example
 Task: Use Wireshark to analyze the TLS connection.
