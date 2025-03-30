@@ -34,7 +34,7 @@ Now you can upload our Certificate Signing Request (csr) file to AWS IoT Core (w
 AWS IoT Core will check the CSR Signature and create a certificate (convert CRS into a X.509 certificate and sign it with the AWS private key).
 
 
-## Downlaod all credentials (keys and certificates) from AWS.
+## Downlaod your device certificate from AWS IoT Core and the Amazon Root CA.
 Download your device ("Thing") certificate.
 
 Use OpenSSL to print the device ("Thing") certificate in text form:
