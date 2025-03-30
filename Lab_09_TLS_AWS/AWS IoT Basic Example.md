@@ -1,4 +1,5 @@
 # Create AWS credentials (keys and certificates)
+AWS IoT Core Developer Guide: https://docs.aws.amazon.com/iot/latest/developerguide/security.html 
 
 ## Generate a client RSA key-pair:
 ```
@@ -35,7 +36,7 @@ AWS IoT Core will check the CSR Signature and create a certificate (convert CRS 
 
 
 ## Downlaod your device certificate from AWS IoT Core and the Amazon Root CA.
-Download your device ("Thing") certificate.
+Download your device ("Thing") certificate. 
 
 Use OpenSSL to print the device ("Thing") certificate in text form:
 
@@ -59,6 +60,7 @@ openssl x509 -text -noout -in AmazonRootCA1.pem
 - Use MQTT Explorer to send/receive MQTT messages to/from the AWS IoT Core Cloud.
 - Use AWS “Test” Web Interface to send/receive MQTT messages to/from MQTT Explorer
 - Use the aws_basicPubSub.py example (https://github.com/Gerhard-Schalk/Campus02_Security) to connect to AWS IoT Core Cloud.
+- - Use ```pip install AWSIoTPythonSDK``` to install the required Python libs (see also https://github.com/aws/aws-iot-device-sdk-python)
 
 # Wireshark Example
 Task: Use Wireshark to analyze the TLS connection.
